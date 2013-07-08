@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI - Autocomplete</title>
+
+  <!-- 
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> -->
+
+  
+  <script src="../../lib/jquery-2.0.3/jquery.min.js"></script>
+  <script src="../../lib/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../../lib/jquery-ui-1.10.3/themes/base/jquery-ui.css" />
+
+  <link rel="stylesheet" href="../../lib/bootstrap-2.3.2/css/bootstrap.min.css">
+
+  <script type="text/javascript">
+    $(function(){
+
+      var listData = ["PHP",
+                    "javascript",
+                    "Java",
+                    "Ruby",
+                    "ActionScript",
+                    "AppleScript",
+                    "Asp",
+                    "BASIC",
+                    "C",
+                    "C++",
+                    "Clojure",
+                    "COBOL",
+                    "ColdFusion",
+                    "Erlang",
+                    "Fortran",
+                    "Groovy",
+                    "Haskell",
+                    "Lisp",
+                    "Perl",
+                    "Python",
+                    "Ruby",
+                    "Scala",
+                    "Scheme"];
+
+      $('#inputData').autocomplete({
+        source : listData,
+        //minLength: 2,
+        select: function(event, ui){
+          //console.log(ui);
+          $('#mySelected').html(ui.item.value);
+        }
+      })
+
+    });
+  </script>
+
+
+</head>
+<body>
+ 
+<div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span6 offset3">
+        <div class="page-header">
+          <img src="./resources/images/jquery.png" style="width: 200px" class="pull-right img-rounded">
+          <span class="lead"><strong>jQuery UI</strong> - Autocomplete</span>
+          <blockquote >
+            <small class="pull-left">by THE JOSH 
+              <cite class="text-info" title="Source Title">, scada.josh@gmail.com</cite>
+            </small>
+          </blockquote>
+        </div>
+
+        <!-- Place code here -->
+        <input type="text" placeholder="Type something..." id="inputData">
+        <span class="help-block">selected : <em class="text-info" id="mySelected">...</em></span>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+

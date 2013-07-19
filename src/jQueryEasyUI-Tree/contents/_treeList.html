@@ -1,0 +1,8 @@
+<!--  <ul class="easyui-tree" data-options="url:'dataModel.json',animate:true"></ul> -->
+    <ul id="tt" class="easyui-tree" data-options="
+        url: 'dataModel.json',
+        animate: true,
+        onClick: function(node){
+        console.log(node.text);
+      }
+      "></ul>

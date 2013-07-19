@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+  <!-- <meta charset="utf-8">
+  <title>jQuery UI - Autocomplete</title>
+
+   
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /> -->
+
+  
+  <!-- <script src="../../lib/jquery-2.0.3/jquery.min.js"></script>
+  <script src="../../lib/jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+  <link rel="stylesheet" href="../../lib/jquery-ui-1.10.3/themes/base/jquery-ui.css" /> -->
+
+
+
+  <meta charset="UTF-8">
+  <title>Basic Accordion - jQuery EasyUI Demo</title>
+  <link rel="stylesheet" href="../../lib/bootstrap-2.3.2/css/bootstrap.min.css">
+
+   <!--<link rel="stylesheet" type="text/css" href="../../lib/jquery-easyui-1/themes/default/easyui.css"> -->
+  <!--<link rel="stylesheet" type="text/css" href="../../lib/jquery-easyui-1/themes/bootstrap/easyui.css">-->
+  <!--<link rel="stylesheet" type="text/css" href="../../lib/jquery-easyui-1/themes/icon.css">
+  <script type="text/javascript" src="../../lib/jquery-easyui-1/jquery.min.js"></script>
+  <script type="text/javascript" src="../../lib/jquery-easyui-1/jquery.easyui.min.js"></script>-->
+
+  <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+  <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+  <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span6 offset3">
+        <div class="page-header">
+          <img src="./resources/images/jquery.png" style="width: 200px" class="pull-right img-rounded">
+          <span class="lead"><strong>jQuery Easy UI</strong> - Accordion</span>
+          <blockquote >
+            <small class="pull-left">by THE JOSH 
+              <cite class="text-info" title="Source Title">, scada.josh@gmail.com</cite>
+            </small>
+          </blockquote>
+        </div>
+<!-- ################################################################################ -->
+
+
+        <div class="easyui-accordion span11" style="height:300px;">
+
+          <div title="About" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+            
+            <h3 style="color:#0099FF;">Accordion for jQuery</h3>
+            <p>Accordion is a part of easyui framework for jQuery. It lets you define your accordion component on web page more easily.</p>
+          </div>
+
+          <div title="Help" data-options="iconCls:'icon-help'" style="padding:10px;">
+            <p>The accordion allows you to provide multiple panels and display one at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>         
+          </div>
+
+          <div title="TreeMenu" data-options="iconCls:'icon-search'" style="padding:10px;">
+            <ul class="easyui-tree">
+              <li>
+                <span>Foods</span>
+                <ul>
+                  <li>
+                    <span>Fruits</span>
+                    <ul>
+                      <li>apple</li>
+                      <li>orange</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>Vegetables</span>
+                    <ul>
+                      <li>tomato</li>
+                      <li>carrot</li>
+                      <li>cabbage</li>
+                      <li>potato</li>
+                      <li>lettuce</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+          <div title="Ajax" data-options="href:'./contents/_treeList.html'" style="padding:10px">
+          </div>
+        </div>
+
+
+<!-- ################################################################################ -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+

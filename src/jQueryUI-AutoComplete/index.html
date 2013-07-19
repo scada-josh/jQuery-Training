@@ -25,15 +25,6 @@
                     "Ruby",
                     "ActionScript",
                     "AppleScript",
-                    "Asp",
-                    "BASIC",
-                    "C",
-                    "C++",
-                    "Clojure",
-                    "COBOL",
-                    "ColdFusion",
-                    "Erlang",
-                    "Fortran",
                     "Groovy",
                     "Haskell",
                     "Lisp",
@@ -45,12 +36,13 @@
 
       $('#inputData').autocomplete({
         source : listData,
-        //minLength: 2,
+        minLength:0,
         select: function(event, ui){
-          //console.log(ui);
           $('#mySelected').html(ui.item.value);
         }
-      })
+      }).focus(function(){
+          $(this).autocomplete("search");
+      });
 
     });
   </script>
@@ -58,7 +50,7 @@
 
 </head>
 <body>
- 
+
 <div class="container-fluid">
     <div class="row-fluid">
       <div class="span6 offset3">
@@ -71,11 +63,18 @@
             </small>
           </blockquote>
         </div>
+<!-- ################################################################################ -->
+
+
 
         <!-- Place code here -->
         <input type="text" placeholder="Type something..." id="inputData">
         <span class="help-block">selected : <em class="text-info" id="mySelected">...</em></span>
 
+
+
+
+<!-- ################################################################################ -->
       </div>
     </div>
   </div>
